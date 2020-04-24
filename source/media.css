@@ -2,27 +2,30 @@
     /* hero */
     .home_hero h1 {font-size: 50px;}    
     .home_hero h4 {margin-bottom: 0}
-    .form_email h5 {margin: 30px 0 10px; font-size: 18px; padding: 0 10%;}
-    .form_email_container {flex-direction: column-reverse;}
+    .form_email {height: auto;}
+    .form_email h5 {margin: 30px 0 10px; font-size: 18px; padding: 0 10%;} /*뭐지?*/
+    .form_email_container {flex-direction: column-reverse; height: auto;}
+    .form_email_container h5 {max-width: 500px; padding: 0 10%; height: auto;}
     .form_email {display: block;}
     .form_email input {border-radius: 4px; margin: 10px 0 20px 0;height: 60px;}
-    .form_email button {border-radius: 4px; height: 44px; width: 160px; display: block; margin: 0 auto; line-height: 44px;} /* 크기 축소 할 것*/
+    .form_email button {border-radius: 4px; height: 44px; width: 160px; display: block; margin: 0 auto; line-height: 44px;}
     .form_email h3 {font-size: 16px;}
 
     /* card_animation */
     .card_animation .container {flex-direction: column; width: 100%;}
     .card_animation .text {width: 100%; text-align: center;}
     .card_animation .text h2 {font-size: 40px;}
-    .card_animation .text h4 {font-size: 20px; margin-top: 40px;}
+    .card_animation .text h4 {font-size: 20px; margin-top: 40px; line-height: 30px;}
     .card_animation .img {width: 65%;}
     
     .sss {flex-direction: column-reverse !important;}
-    .card_animation .img_02 {width: 70%;}
+    .card_animation .img_02 {width: 70%; margin-left: 0;}
     
     .text_02 h4 {margin-bottom: 30px;}
     .card_animation .text_02 {width: 100%; text-align: center;}
     .card_animation .text_02 h2 {font-size: 40px;}
     .card_animation .text_02 h4 {font-size: 20px; margin-top: 40px;}
+    .card_animation .text br {display: block;}
     .img_02 >img {width: 100%;}
     
     .card_animation .img_03 {width: 65%;}
@@ -34,8 +37,10 @@
     .section_qna .box {width: 100%;}
     /* 하단 이메일 */
     .flex_center {display: flex; flex-direction: column; align-items: center; justify-content: center; height: auto; margin: 10px 0;}    
+    .form_email_text_width {padding: 0 !important;  max-width: 633px !important;}
 
-      
+    /* footer */
+    footer .container {padding: 0 10%;}
 }
 
 @media screen and (max-width:740px) {
@@ -63,14 +68,27 @@
     .home_hero h4 {font-size: 18px;}
     .form_email {width: 100%; }   
 
+    /* card_animation */
+    .card_animation .img {width: 100%;}
+    .card_animation .img_03 {width: 100%;}
+
     /* accordion */
     .section_qna .container {width: 100%;}
     .section_qna button {height: 53px; padding: 0 31px;}
     .section_qna h4 {font-size: 18px;}
     /* 하단 이메일 */
     .form_email input {max-width: 450px;}
+    .form_email_container h5 {max-width: 450px !important; text-align: center;}
 }
 
 @media screen and (max-width:500px) {
     footer li {width: 50%;}
+}
+
+@media screen and (max-width:420px) {
+    .card_animation .sub-img {left: 0}
+}
+
+@media screen and (max-width:370px) {
+    .card_animation .sub-img {left: -20px;}
 }

@@ -1,9 +1,15 @@
 @import url("basic.css");
  
 
+/* element */
+.padding_top_50vh {padding-top: 58px;}
+.font_size_25 {font-size: 25px;}
+.margin_upbottm_52 {padding: 52px 0;}
+
+
 /* header */
 #logo {width: 167px; height: 45px;}
-.home_header {width: 100%; height: 100px; padding: 28px 56px 0; display: flex; justify-content: space-between; position: absolute; top: 0; left: 0;}
+.home_header {width: 100%; padding: 28px 56px 0; display: flex; justify-content: space-between; position: absolute; top: 0; left: 0;}
 .home_header button {width: 80px; height: 40px; text-align: center; line-height: 40px; background-color: #e50914; border-radius: 6px;}
 
 hr {height: 8px; color: #222;}
@@ -11,9 +17,9 @@ hr {height: 8px; color: #222;}
 
 
 /* home_header */
-.home_hero {width: 100%; height: 80vh;  background-image: url(../img/section_01.jpg); background-size: cover; background-position: center;}
+.home_hero {width: 100%; height: 100vh;  background-image: url(../img/section_01.jpg); background-size: cover; background-position: center;}
 
-.hero_container {width: 100%; height: 100%; background-color: rgba(0,0,0,0.4); display: flex; justify-content: flex-end; align-items: center; flex-direction: column; padding-bottom: 75px; background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);}
+.hero_container {width: 100%; height: 100%; background-color: rgba(0,0,0,0.4); display: flex; align-items: center; justify-content: center; flex-direction: column; background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);}
 
 .home_hero h4 {margin: 16px 0 30px;}
 .home_hero h5 {margin-top: 14px;}
@@ -33,6 +39,7 @@ hr {height: 8px; color: #222;}
 
 .card_animation .container {max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; background-color: black;}
 .card_animation .text {width: 52%;}
+.card_animation .text br {display: noe;}
 
 .card_animation h2 {margin-bottom: 8px;}
 .card_animation >h4 {margin-top: 19.5px;}
@@ -48,6 +55,20 @@ hr {height: 8px; color: #222;}
 .card_animation .img_02 {width: 48%; position: relative; margin-left: -8%;}
 .card_animation .img_02 img {max-width: 100%;  overflow: hidden;}
 
+.card_animation .sub-img {width: fit-content; margin: 0 auto; padding: 12px 12px;   background-color: black; display: flex; align-items: center; border-radius: 12px; border:2px solid rgba(255,255,255,0.25); position: absolute; bottom: 0; left: calc(50% - 170.5px);}
+.card_animation .sub-img img {width: 57px; height: 80px;}
+.card_animation .sub-img >div:nth-of-type(1) {padding-left: 12px; margin-right: 16px;}
+.card_animation .sub-img >div:nth-of-type(2) {width: 180px;}
+.card_animation .sub-img >div:nth-of-type(3) {width: 48px; height: 60px;}
+.card_animation .sub-img >div:nth-of-type(3) img {width: 48px; height: 60px;}
+
+.card_animation .text_02 {width: 52%;}
+
+
+/* card_animation_02 백업
+.card_animation .img_02 {width: 48%; position: relative; margin-left: -8%;}
+.card_animation .img_02 img {max-width: 100%;  overflow: hidden;}
+
 .card_animation .sub-img {margin: 0 auto; padding: 12px 12px;   background-color: black; display: flex; align-items: center; border-radius: 12px; border:2px solid rgba(255,255,255,0.25); position: absolute; left: calc(50% - 170.5px); bottom: 4%; }
 .card_animation .sub-img img {width: 57px; height: 80px;}
 .card_animation .sub-img >div:nth-of-type(1) {padding-left: 12px; margin-right: 16px;}
@@ -56,6 +77,7 @@ hr {height: 8px; color: #222;}
 .card_animation .sub-img >div:nth-of-type(3) img {width: 48px; height: 60px;}
 
 .card_animation .text_02 {width: 52%;}
+ */
 
 
 
@@ -70,7 +92,7 @@ hr {height: 8px; color: #222;}
 
 /* 아코디언(자주 묻는 질문) */
 .section_qna {width: 100%; background-color: black;}
-.section_qna .container {width: 75%; margin: 0 auto; display: flex; flex-direction: column; align-items: center; padding-bottom: 70px;}
+.section_qna .container {width: 75%; margin: 0 auto; display: flex; flex-direction: column; align-items: center;}
 .section_qna h2 {margin: 52px 0;}
 .section_qna button {width: 815px; background-color: #303030; padding: 20px 31px 20px 31px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;}
 .icon_plus {transform: rotate(0deg); width: 18px; transition: transform 0.25s cubic-bezier(0.5, 0, 0.1, 1);}
