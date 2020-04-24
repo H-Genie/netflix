@@ -26,8 +26,8 @@ hr {height: 8px; color: #222;}
 
 .form_email {max-width: 760px; height: 70px; display: flex; justify-content: center; align-items: center;}
 .form_email_container {display: flex; flex-direction: column; align-items: center;}
-.form_email input {width: 500px; height: 100%; background-color: white; color: gray; line-height: 70px; text-align: left; padding: 0 20px; border-radius: 4px 0 0 4px;}
-.form_email button {width: 260px; height: 100%; background-color: #e50914; line-height: 70px; border-radius: 0 4px 4px 0;}
+.form_email input {width: 500px; height: 100%; background-color: white; color: gray; text-align: left; padding: 0 20px; border-radius: 4px 0 0 4px;}
+.form_email button {width: 260px; height: 100%; background-color: #e50914; border-radius: 0 4px 4px 0;}
 
 
 
