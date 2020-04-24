@@ -1,3 +1,5 @@
+/* 넷플릭스 클론 코딩 */
+
 @media screen and (max-width:949px) {
     /* hero */
     .home_hero h1 {font-size: 50px;}    
@@ -81,14 +83,23 @@
     .form_email_container h5 {max-width: 450px !important; text-align: center;}
 }
 
+
 @media screen and (max-width:500px) {
     footer li {width: 50%;}
 }
 
+
+/*  저장중 맞춤 미디어 쿼리 */
 @media screen and (max-width:420px) {
     .card_animation .sub-img {left: 0}
 }
 
 @media screen and (max-width:370px) {
     .card_animation .sub-img {left: -20px;}
+}
+
+
+/* 소형 모바일 맞춤 미디어 쿼리 */
+@media screen and (max-width:450px) {
+    
 }
