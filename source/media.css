@@ -1,10 +1,16 @@
 /* 넷플릭스 클론 코딩 */
+@media screen and (max-width:1024px) {
+    .card_animation h2 {font-size: 40px;}
+    .card_animation h4 {font-size: 20px;}
+}
+
+
 @media screen and (max-width:949px) {
     /* hero */
     .home_hero h1 {font-size: 50px;}    
     .home_hero h4 {margin-bottom: 0}
     .form_email {height: auto;}
-    .form_email h5 {margin: 30px 0 10px; font-size: 18px; padding: 0 10%;} /*뭐지?*/
+ 
     .form_email_container {flex-direction: column-reverse; height: auto;}
     .form_email_container h5 {max-width: 500px; padding: 0 10%; height: auto;}
     .form_email {display: block;}
@@ -17,19 +23,26 @@
     .card_animation .text {width: 100%; text-align: center;}
     .card_animation .text h2 {font-size: 40px;}
     .card_animation .text h4 {font-size: 20px; margin-top: 40px; line-height: 30px;}
-    .card_animation .img {width: 65%;}
+    .card_animation .img {width: 90%;}
+    .card_animation .img >div {width: 73%;}
+    .card_animation .img >div video {min-width: 100%;}
     
+    /* card_animation_02 */
     .sss {flex-direction: column-reverse !important;}
-    .card_animation .img_02 {width: 70%; margin-left: 0;}
+    .card_animation .img_02 {min-width: 70%; margin-left: 0;}
+    .card_animation .img_02 img {min-width: 100%;}
     
     .text_02 h4 {margin-bottom: 30px;}
     .card_animation .text_02 {width: 100%; text-align: center;}
     .card_animation .text_02 h2 {font-size: 40px;}
     .card_animation .text_02 h4 {font-size: 20px; margin-top: 40px;}
     .card_animation .text br {display: block;}
-    .img_02 >img {width: 100%;}
+    .img_02 >img {min-width: 100%;}
     
-    .card_animation .img_03 {width: 65%;}
+    /* card_animation_03 */
+    .card_animation .img_03 {width: 90%;}
+    .card_animation .img_03 >div {width: 62%;}
+    .card_animation .img_03 video {min-width: 100%;}
 
     /* accordion */
     .section_qna button {width: 100%;}
@@ -39,6 +52,7 @@
     /* 하단 이메일 */
     .flex_center {display: flex; flex-direction: column; align-items: center; justify-content: center; height: auto; margin: 10px 0;}    
     .form_email_text_width {padding: 0 !important;  max-width: 633px !important;}
+    .form_email_container h5 {text-align: center;}
 
     /* footer */
     footer .container {padding: 0 10%;}
@@ -51,7 +65,7 @@
     .home_hero h5 {max-width: 450px;}
 
     /* card_animation */
-    .card_animation .img_02 {width: 100%;}
+    .card_animation .img_02 {min-width: 100%;}
 
     /* 하단 이메일 */
     .form_email_container h5 {max-width: 450px; text-align: center;}
@@ -67,9 +81,12 @@
     .home_hero {height: 512px;}
     .home_hero h1 {font-size: 28px;}
     .home_hero h4 {font-size: 18px;}
-    .form_email {width: 100%; }   
+    .form_email {width: 100%; }       
 
     /* card_animation */
+    .card_animation h2 {font-size: 30px !important;}
+    card_animation h4 {font-size: 18px !important;}
+
     .card_animation .img {width: 100%;}
     .card_animation .img_03 {width: 100%;}
 
@@ -79,7 +96,7 @@
     .section_qna h4 {font-size: 18px;}
     /* 하단 이메일 */
     .form_email input {max-width: 450px;}
-    .form_email_container h5 {max-width: 450px !important; text-align: center;}
+    .form_email_container h5 {max-width: 500px;}
 }
 
 
@@ -89,12 +106,41 @@
 
 
 /*  저장중.. 맞춤 미디어 쿼리 */
-@media screen and (max-width:420px) {
-    .card_animation .sub-img {left: calc(50% - 140.5px);}
+@media screen and (max-width:430px) {
+    .home_hero h4 {padding: 0 10%;}
+    .card_animation h2 {font-size: 28px !important;}
+    .card_animation h4 {font-size: 18px !important;}
+    
+    .card_animation .sub-img {left: calc(50% - 130px);}
+    .card_animation .sub-img >div:nth-of-type(2) {width: auto;}
+
+    .section_qna h2 {font-size: 30px;}
 }
 
-@media screen and (max-width:370px) {
-    
+@media screen and (max-width:360px) {
+    .card_animation h2 {font-size: 25px !important;}
+    .card_animation h4 {font-size: 15px !important;}
+    .card_animation .sub-img {bottom: -20%;}
+
+    .section_qna h4 {font-size: 15px;}
+    footer p {font-size: 10px !important;}
+}
+
+@media screen and (max-width:340px) {
+    .card_animation .sub-img {left: calc(50% - 125px);}
+}
+
+@media screen and (max-width:330px) {
+    .card_animation .sub-img {left: calc(50% - 120px);}
+}
+
+@media screen and (max-width:320px) {
+    .home_hero h4 {font-size: 15px;}
+    .form_email_container h5 {font-size: 12px !important;}
+    .card_animation h2 {font-size: 20px !important;}
+    .card_animation h4 {font-size: 12px !important;}
+
+    .card_animation .sub-img {left: calc(50% - 115px);}
 }
 
 
