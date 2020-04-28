@@ -6,6 +6,8 @@
 
 
 @media screen and (max-width:949px) {
+    #logo {width: 145px; height: 40px;}
+
     /* hero */
     .home_hero h1 {font-size: 50px;}    
     .home_hero h4 {margin-bottom: 0}
@@ -45,10 +47,10 @@
     .card_animation .img_03 video {min-width: 100%;}
 
     /* accordion */
-    .section_qna button {width: 100%;}
+    .section_qna button {width: 100%; padding: 20px;}
     .section_qna h2 {font-size: 40px;}
     .section_qna h4 {font-size: 20px;}
-    .section_qna .box {width: 100%;}
+    .section_qna .box {width: 100%; padding: 20px;}
     /* 하단 이메일 */
     .flex_center {display: flex; flex-direction: column; align-items: center; justify-content: center; height: auto; margin: 10px 0;}    
     .form_email_text_width {padding: 0 !important;  max-width: 633px !important;}
@@ -66,6 +68,8 @@
 
     /* card_animation */
     .card_animation .img_02 {min-width: 100%;}
+
+    .section_qna h4 {font-size: 18px;}
 
     /* 하단 이메일 */
     .form_email_container h5 {max-width: 450px; text-align: center;}
@@ -92,8 +96,7 @@
 
     /* accordion */
     .section_qna .container {width: 100%;}
-    .section_qna button {height: 53px; padding: 0 31px;}
-    .section_qna h4 {font-size: 18px;}
+    .section_qna button {height: 53px; padding: 0 20px;}
     /* 하단 이메일 */
     .form_email input {max-width: 450px;}
     .form_email_container h5 {max-width: 500px;}
@@ -101,46 +104,55 @@
 
 
 @media screen and (max-width:500px) {
-    footer li {width: 50%;}
+    footer {padding: 10%;}
+    footer .container {padding: 0;}
+    footer ul {display: flex; justify-content: space-between;}
+    footer li {width: 34%;}
 }
 
 
 /*  저장중.. 맞춤 미디어 쿼리 */
+@media screen and (max-width:463px) {
+    .sub-img {height: 30% !important;}
+}
+
 @media screen and (max-width:430px) {
     .home_hero h4 {padding: 0 10%;}
     .card_animation h2 {font-size: 28px !important;}
     .card_animation h4 {font-size: 18px !important;}
     
-    .card_animation .sub-img {left: calc(50% - 130px);}
-    .card_animation .sub-img >div:nth-of-type(2) {width: auto;}
-
     .section_qna h2 {font-size: 30px;}
+}
+
+@media screen and (max-width:424px) {
+    .sub-img {padding: 1px 1px !important;}
+    .sub-img h6 {font-size: 12px;}
+    .sub-img p {font-size: 12px;}
 }
 
 @media screen and (max-width:360px) {
     .card_animation h2 {font-size: 25px !important;}
     .card_animation h4 {font-size: 15px !important;}
-    .card_animation .sub-img {bottom: -20%;}
-
+  
     .section_qna h4 {font-size: 15px;}
     footer p {font-size: 10px !important;}
 }
 
-@media screen and (max-width:340px) {
-    .card_animation .sub-img {left: calc(50% - 125px);}
+@media screen and (max-width:334px) {
+    .sub-img h6 {font-size: 10px;}
+    .sub-img p {font-size: 10px;}
+
+    .section_qna h4 {font-size: 12px;}
 }
 
-@media screen and (max-width:330px) {
-    .card_animation .sub-img {left: calc(50% - 120px);}
-}
 
 @media screen and (max-width:320px) {
     .home_hero h4 {font-size: 15px;}
     .form_email_container h5 {font-size: 12px !important;}
     .card_animation h2 {font-size: 20px !important;}
-    .card_animation h4 {font-size: 12px !important;}
+    .card_animation h4 {font-size: 12px !important;} 
 
-    .card_animation .sub-img {left: calc(50% - 115px);}
+    .form_email h3 {font-size: 12px;}
 }
 
 
