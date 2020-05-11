@@ -31,17 +31,27 @@
 .login_body_aside a:hover {text-decoration: underline; cursor: pointer;}
 
 
+@media screen and (max-width:414px) {
+    #logo2 {width: 125px;}
+    .login_body {padding: 0 5%;}
+    .login_body h3 {font-size: 26px;}    
+    
+    footer {padding: 0 5% !important;}
+}
+
+
 @media screen and (max-width:738px) {
     
     .home_header {display: none;}
     #logo2 {display: block; margin: 0 auto;}
 
-    .home_hero {background-image: url(); background-color: black; height: auto;}
+    .home_hero {background-image: url(); background-color: black; height: auto; padding-bottom: 20%;}
     .hero_container {background-color: black; align-items: flex-start;}
     .login_body {width: 100vw; background-color: black; margin-top: 0px !important; padding-top: 0;}
     .login_field {width: 100%;}
     .login_field input {width: 100%;}
 
+    hr {display: block !important;}
     footer {padding: 0 0 0 68px; background-color: black !important;}
     footer .container {width: auto !important;}    
 }
@@ -64,14 +74,3 @@ footer .container a:hover {text-decoration: underline; cursor: pointer;}
 
 .select {width: fit-content; border-radius: 2px; border: 0.5px solid #999999; color: #999999; display: flex; align-items: center; padding: 18px 12px 18px 12px; margin-top: 20px;}
 select {padding: 0 20px;}
-
-
-/* footer 
-footer {padding: 70px 45px; background-color: black;}
-
-footer .container {width: 900px; margin: 0 auto; color: #757575;}
-
-footer >div >h6 {margin-bottom: 30px; display: inline-block;}
-footer a:hover {text-decoration: underline; cursor: pointer;}
-footer ul {display: flex; flex-wrap: wrap;}
-footer li {width: 25%; margin-bottom: 16px;}
