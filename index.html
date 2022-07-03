@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" type="text/css" href="source/home.css">
     <link rel="stylesheet" type="text/css" href="source/media.css">
+    <link rel="stylesheet" type="text/css" href="source/popup.css">
     <link rel="icon" href="img/favicon.ico" sizes="16x16">
 
     <script type="text/javascript" src="source/javascript.js"></script>
@@ -29,6 +30,22 @@
 
 
 <main>
+    <section class="popup">
+        <div class="popup_body">
+            <p>이 페이지는 넷플릭스의 공식 홈페이지가 아닙니다.</p>
+            <p>This page is not the official Netfilx hompage.</p>
+            <br />
+            <p>퍼블리싱 연습 목적으로 만든 페이지로, 아무런 정보를 수집하지 않습니다</p>
+            <p>
+                This page was created for web-publishing practice, and do not collect any information.
+            </p>
+            <br />
+            <button onclick="closePopup()">Close</button>
+        </div>
+        <script>
+            const closePopup = () => document.querySelector('.popup').style.display = "none";
+        </script>
+    </section>
 
     <!--hero-->
     <section class="home_hero text_align_center">
@@ -38,9 +55,9 @@
 
             
             <div class="form_email_container">
-                <form action="join.php" class="form_email">
+                <form action="" class="form_email">
                     <input type="email" id="e-mail" name="email" placeholder="이메일 주소"></input>
-                    <button type="submit"><h3 class="font_size_25">30일 무료 이용</h3></button>
+                    <button type="submit" disabled><h3 class="font_size_25">30일 무료 이용</h3></button>
                 </form>
 
                 <h5>시청할 준비가 되셨나요? 계정을 등록하거나 엑세스하려면 이메일 주소를 입력하세요.</h5>
@@ -219,9 +236,9 @@
     <div>
         <div class="hero_container margin_upbottm_52">            
             <div class="form_email_container">
-                <form action="join.php" class="form_email flex_center">
+                <form action="" class="form_email flex_center">
                     <input type="email" id="e-mail" name="email" placeholder="이메일 주소"></input>
-                    <button type="submit"><h3 class="font_size_25">30일 무료 이용</h3></button>
+                    <button type="submit" disabled><h3 class="font_size_25">30일 무료 이용</h3></button>
                 </form>
 
                 <h5 class="form_email_text_width">시청할 준비가 되셨나요? 계정을 등록하거나 엑세스하려면 이메일 주소를 입력하세요.</h5>
