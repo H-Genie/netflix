@@ -1,1 +1,1 @@
-https://h-genie.github.io/netflix/
+https://netflix-genie.vercel.app
